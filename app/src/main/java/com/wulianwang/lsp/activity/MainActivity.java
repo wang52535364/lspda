@@ -9,11 +9,13 @@ import android.widget.Button;
 import android.widget.ImageView;
 
 import com.wulianwang.lsp.R;
+import com.wulianwang.lsp.bean.User;
+import com.wulianwang.lsp.util.SharedPrefsUtil;
 
 public class MainActivity extends AppCompatActivity {
 
     private Button im1, im2, im3, im4;
-    boolean isLogin = true;
+    boolean isLogin = false;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -61,5 +63,20 @@ public class MainActivity extends AppCompatActivity {
                 }
             }
         });
+
+    }
+
+    @Override
+    protected void onResume() {
+        super.onResume();
+        User user = SharedPrefsUtil.getValue(this, "user", (User)null);
+
+        if(user == null){
+            isLogin = false;
+            im4.setText("登录/注册");
+        }else{
+            isLogin = true;
+            im4.setText("我的");
+        }
     }
 }

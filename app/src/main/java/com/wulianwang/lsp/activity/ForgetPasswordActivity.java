@@ -6,6 +6,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageButton;
+import android.widget.ImageView;
 import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
@@ -17,7 +18,7 @@ import com.wulianwang.lsp.R;
  */
 public class ForgetPasswordActivity extends AppCompatActivity {
 
-    private ImageButton mybtn1;private Button mybtn2;
+    private ImageView mybtn1;private Button mybtn2;
     private  EditText editText1;private  EditText editText2; private EditText editText;
     String psaaword0; String password1; String password2;
 
@@ -28,7 +29,7 @@ public class ForgetPasswordActivity extends AppCompatActivity {
         editText = (EditText) findViewById(R.id.et_password0);
         editText1 = (EditText) findViewById(R.id.et_password1);
         editText2 = (EditText) findViewById(R.id.et_password2);
-        mybtn1 = (ImageButton) findViewById(R.id.bt1);
+        mybtn1 = (ImageView) findViewById(R.id.bt1);
         mybtn2 = (Button) findViewById(R.id.bt2);
         mybtn1.setOnClickListener(new View.OnClickListener() {
             @Override

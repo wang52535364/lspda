@@ -61,9 +61,6 @@ public class TaskDetailActivity extends AppCompatActivity {
 
         });
 
-
-
-
         //接单
         if(flag){
             bt1.setVisibility(View.VISIBLE);
@@ -71,13 +68,13 @@ public class TaskDetailActivity extends AppCompatActivity {
                 @Override
                 public void onClick(View v) {
 
-          }else{
+                }
+            });
+        }else{
             bt1.setVisibility(View.GONE);
             back.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
-                        }
-                    });
 
                 }
             });
@@ -88,49 +85,6 @@ public class TaskDetailActivity extends AppCompatActivity {
             public void onClick(View v) {
                 finish();
             }
-        });}
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    }
-
-    private class LoginActivity {
+        });
     }
 }
