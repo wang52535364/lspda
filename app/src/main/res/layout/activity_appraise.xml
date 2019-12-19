@@ -13,24 +13,23 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
+        android:background="#AEEEEE"
+        android:gravity="center_vertical"
         tools:ignore="MissingConstraints">
 
-        <ImageButton
+        <ImageView
             android:id="@+id/button1"
             android:layout_width="35dp"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="10dp"
-            android:layout_marginTop="10dp"
-            android:src="@mipmap/zuo" />
+            android:src="@drawable/fanhui2" />
         <TextView
             android:id="@+id/xq"
             android:layout_width="380dp"
             android:layout_height="wrap_content"
-            android:layout_marginTop="15dp"
             android:text="工作详情"
             android:gravity="center"
             android:textSize="32dp"
-            android:background="#AEEEEE"/>
+            />
     </LinearLayout>
 
     <LinearLayout

@@ -35,10 +35,10 @@
 
             <ImageView
                 android:id="@+id/imageView4"
-                android:layout_width="80dp"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:background="#33CC70"
-                app:srcCompat="@drawable/htmal5icon37" />
+                app:srcCompat="@drawable/fanhui2" />
             <TextView
                 android:id="@+id/textView3"
                 android:layout_width="wrap_content"

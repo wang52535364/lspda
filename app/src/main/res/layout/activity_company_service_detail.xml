@@ -18,11 +18,10 @@
         tools:layout_editor_absoluteX="-16dp">
 
         <ImageView
-            android:layout_width="77dp"
-
-            android:layout_height="28dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             android:id="@+id/af"
-            android:src="@drawable/htmal5icon37" />
+            android:src="@drawable/fanhui2" />
 
         <TextView
             android:layout_width="363dp"
