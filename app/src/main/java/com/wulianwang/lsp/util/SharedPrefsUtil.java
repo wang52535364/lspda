@@ -80,7 +80,7 @@ public class SharedPrefsUtil {
         SharedPreferences sharedPreferences=context.getSharedPreferences(SETTING,context.MODE_PRIVATE);
         String temp = sharedPreferences.getString(key, "");
         ByteArrayInputStream bais =  new ByteArrayInputStream(Base64.decode(temp.getBytes(), Base64.DEFAULT));
-        User user = null;
+        User user = defValue;
         try {
             ObjectInputStream ois = new ObjectInputStream(bais);
             user = (User) ois.readObject();
