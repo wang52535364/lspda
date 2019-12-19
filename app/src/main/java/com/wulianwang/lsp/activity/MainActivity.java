@@ -13,7 +13,7 @@ import com.wulianwang.lsp.R;
 public class MainActivity extends AppCompatActivity {
 
     private Button im1, im2, im3, im4;
-    boolean isLogin = false;
+    boolean isLogin = true;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

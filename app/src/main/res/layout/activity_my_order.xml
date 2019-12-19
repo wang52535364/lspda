@@ -49,10 +49,10 @@
 
         <ImageView
             android:id="@+id/cho_rili"
-            android:layout_width="wrap_content"
+            android:layout_width="50dp"
             android:layout_height="75dp"
             android:gravity="center"
-        />    android:src="@drawable/rili" />
+            android:src="@drawable/riqi" />
     </LinearLayout>
     <FrameLayout
         android:layout_height="wrap_content"

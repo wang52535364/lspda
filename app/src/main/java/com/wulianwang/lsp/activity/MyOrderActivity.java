@@ -36,6 +36,7 @@ public class MyOrderActivity extends AppCompatActivity implements RadioGroup.OnC
         radioGroup = (RadioGroup) findViewById(R.id.RG);
         radioGroup.setOnCheckedChangeListener(this);
 
+        tv_1 = findViewById(R.id.tv_1);
 
         Calendar ca = Calendar.getInstance();
         int mYear = ca.get(Calendar.YEAR);
@@ -47,7 +48,7 @@ public class MyOrderActivity extends AppCompatActivity implements RadioGroup.OnC
         choRili.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                pvTime.show();
+                pvTime.show(tv_1);
 
 
             }

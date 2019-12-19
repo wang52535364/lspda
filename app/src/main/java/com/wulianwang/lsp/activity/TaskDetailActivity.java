@@ -25,8 +25,10 @@ public class TaskDetailActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-
         setContentView(R.layout.activity_task_detail);
+
+        int s = getIntent().getIntExtra("key", 0);
+
         ImageView back = findViewById(R.id.back);
 
         ivAdress = findViewById(R.id.iv_address);
